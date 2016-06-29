@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acburdine/gh-release-contribs.git"
+    "url": "git+https://github.com/acburdine/gh-contrib-list.git"
   },
   "keywords": [
     "github",
@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acburdine/gh-release-contribs/issues"
+    "url": "https://github.com/acburdine/gh-contrib-list/issues"
   },
-  "homepage": "https://github.com/acburdine/gh-release-contribs#readme",
+  "homepage": "https://github.com/acburdine/gh-contrib-list#readme",
   "dependencies": {
     "bluebird": "3.4.1",
     "lodash": "4.13.1",
