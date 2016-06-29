@@ -53,8 +53,9 @@ describe('gh-contrib-list', function () {
             };
 
             getPagination(opts).then(function (results) {
-                expect(results.length).to.equal(1);
+                expect(results.length).to.equal(2);
                 expect(results[0].id).to.equal('acburdine');
+                expect(results[1].id).to.equal('anotherUser');
 
                 done();
             }).catch(done);

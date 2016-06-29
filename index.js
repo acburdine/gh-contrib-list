@@ -103,10 +103,15 @@ function getPagination(_commits, _options) {
     return requestPromise(options).then(function (results) {
         var indexOfLastSha = _.findIndex(results[0], ['sha', options.commit]);
 
-        if (indexOfLastSha < 0 && results[1]) {
+        if (indexOfLastSha < 0) {
             commits = commits.concat(results[0]);
-            options.url = results[1];
-            return getPagination(commits, options);
+
+            if (results[1]) {
+                options.url = results[1];
+                return getPagination(commits, options);
+            }
+
+            return commits;
         }
 
         return commits.concat(_.slice(results[0], 0, indexOfLastSha + 1));
