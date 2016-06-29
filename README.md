@@ -1,4 +1,5 @@
-<a href="https://travis-ci.org/acburdine/gh-contrib-list"><img align="right" src="https://travis-ci.org/acburdine/gh-contrib-list.svg?branch=master" alt="Build status" /></a>
+[![travis](https://travis-ci.org/acburdine/gh-contrib-list.svg?branch=master)](https://travis-ci.org/acburdine/gh-contrib-list)
+[![npm](https://img.shields.io/npm/v/gh-contrib-list.svg?maxAge=2592000)](https://npmjs.com/package/gh-contrib-list)
 
 # gh-contrib-list
 
