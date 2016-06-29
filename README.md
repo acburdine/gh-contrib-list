@@ -1,8 +1,8 @@
 # gh-contrib-list
 
-A tool to generate a list of contributors from a specific range of commits
-
 <a href="https://travis-ci.org/acburdine/gh-contrib-list"><img align="right" src="https://travis-ci.org/acburdine/gh-contrib-list.svg?branch=master" alt="Build status" /></a>
+
+A tool to generate a list of contributors from a specific range of commits
 
 ## Usage:
 
