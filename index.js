@@ -109,15 +109,15 @@ function getPagination(_commits, _options) {
             return getPagination(commits, options);
         }
 
-        return commits.concat(_.slice(results[0], indexOfLastSha + 1));
+        return commits.concat(_.slice(results[0], 0, indexOfLastSha + 1));
     });
 }
 
-function getContribList(commits, disableGreenkeeper) {
+function getContribList(commits, removeGreenkeeper) {
     commits = _(commits).filter(function (c) {
         var isValidCommit = (c.parents.length === 1 && c.author);
 
-        if (disableGreenkeeper && isValidCommit) {
+        if (removeGreenkeeper && isValidCommit) {
             return c.author.login !== 'greenkeeperio-bot';
         }
 
@@ -155,7 +155,7 @@ function main(options) {
         repo = options.repo,
         commit = options.commit,
         oauthKey = options.oauthKey,
-        disableGreenkeeper = options.disableGreenkeeper,
+        removeGreenkeeper = options.removeGreenkeeper,
         queryParams = '?page=1&per_page=100';
 
     if (options.to) {
@@ -175,7 +175,7 @@ function main(options) {
             retry: options.retry
         });
 
-    return Promise.join(paginationPromise, disableGreenkeeper, getContribList);
+    return Promise.join(paginationPromise, removeGreenkeeper, getContribList);
 }
 
 main.getContribList = getContribList;
