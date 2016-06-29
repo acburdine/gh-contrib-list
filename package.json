@@ -1,0 +1,40 @@
+{
+  "name": "gh-contrib-list",
+  "version": "0.0.0",
+  "description": "tool to generate a contributors list for all commits in a specific release/tag",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint *.js && jscs *.js",
+    "test": "npm run lint && mocha --check-leaks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acburdine/gh-release-contribs.git"
+  },
+  "keywords": [
+    "github",
+    "contributors"
+  ],
+  "author": {
+    "name": "Austin Burdine",
+    "email": "acburdine@gmail.com",
+    "url": "http://github.com/acburdine"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acburdine/gh-release-contribs/issues"
+  },
+  "homepage": "https://github.com/acburdine/gh-release-contribs#readme",
+  "dependencies": {
+    "bluebird": "3.4.1",
+    "lodash": "4.13.1",
+    "request": "2.72.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "jscs": "3.0.5",
+    "jshint": "2.9.2",
+    "mocha": "2.5.3",
+    "rewire": "2.5.1"
+  }
+}
