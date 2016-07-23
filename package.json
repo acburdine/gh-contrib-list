@@ -1,6 +1,6 @@
 {
   "name": "gh-contrib-list",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "tool to generate a contributors list for all commits in a specific release/tag",
   "main": "index.js",
   "scripts": {
